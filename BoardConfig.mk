@@ -2,6 +2,7 @@ USE_CAMERA_STUB := true
 
 TARGET_KERNEL_SOURCE := kernel/essential/msm8998
 TARGET_KERNEL_CONFIG := mata_defconfig
+TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 
@@ -145,7 +146,7 @@ TARGET_POWERHAL_VARIANT := qcom
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+# include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/essential/mata/sepolicy
 
 # Sensors
