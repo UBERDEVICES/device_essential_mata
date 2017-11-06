@@ -133,9 +133,6 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# LLVM
-TARGET_USE_SDCLANG := true
-
 # NFC
 BOARD_NFC_CHIPSET := pn548
 TARGET_USES_NQ_NFC := true
@@ -147,7 +144,6 @@ TARGET_POWERHAL_VARIANT := qcom
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist
 
 # SELinux
-# include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/essential/mata/sepolicy
 
 # Sensors
