@@ -140,6 +140,9 @@ TARGET_USES_NQ_NFC := true
 # PowerHAL
 TARGET_POWERHAL_VARIANT := qcom
 
+# RIL
+TARGET_RIL_VARIANT := caf
+
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist
 
