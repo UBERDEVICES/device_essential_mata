@@ -109,6 +109,7 @@ AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/essential/mata/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
+BOARD_HAS_QCA_BT_ROME := true
 QCOM_BT_USE_BTNV := true
 
 # Display
@@ -151,6 +152,9 @@ USE_SENSOR_MULTI_HAL += true
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
 
+# Enable HW based full disk encryption
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
@@ -163,5 +167,4 @@ BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_AP  := "ap"
 WIFI_DRIVER_FW_PATH_P2P := "p2p"
-WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
-WIFI_DRIVER_MODULE_NAME := "wlan"
+WCNSS_FILTER_USES_SIBS := true
