@@ -282,3 +282,8 @@ PRODUCT_PACKAGES += \
     dhcpcd.conf \
     wpa_supplicant \
     wpa_supplicant.conf
+
+# b/29995499
+$(call add-product-sanitizer-module-config,fec,never)
+$(call add-product-sanitizer-module-config,libfec_host,never)
+$(call add-product-sanitizer-module-config,libfec_rs_host,never)
