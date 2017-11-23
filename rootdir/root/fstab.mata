@@ -5,6 +5,7 @@
 #<src>                                   <mnt_point>        <type> <mnt_flags and options>                          <fs_mgr_flags>
 /dev/block/bootdevice/by-name/system     /                  ext4   ro,barrier=1,discard                             wait,slotselect,verify
 /dev/block/bootdevice/by-name/userdata   /data              ext4   nosuid,nodev,barrier=1,noauto_da_alloc,discard   wait,check,latemount,formattable,fileencryption=ice
+/dev/block/bootdevice/by-name/userdata   /data              f2fs   nosuid,nodev,noatime,inline_xattr,data_flush     wait,check,fileencryption=ice,resize
 /dev/block/zram0                         none               swap   defaults                                         zramsize=536870912
 /dev/block/bootdevice/by-name/misc       /misc              emmc   defaults                                         defaults
 /dev/block/bootdevice/by-name/modem      /firmware          vfat   ro,shortname=lower,uid=1000,gid=1000,dmask=222,fmask=333,context=u:object_r:firmware_file:s0 wait,slotselect
