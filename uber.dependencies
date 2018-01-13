@@ -1,0 +1,17 @@
+[
+  {
+    "repository": "UBERDEVICES/device_essential_mata",
+    "target_path": "device/essential/mata",
+    "branch": "8.1"
+  },
+  {
+    "repository": "UBERDEVICES/proprietary_vendor_essential",
+    "target_path": "vendor/essential",
+    "branch": "8.1"
+  },
+  {
+    "repository": "UBERDEVICES/kernel_essential_msm8998",
+    "target_path": "kernel/essential/msm8998",
+    "branch": "8.1"
+  }
+]
